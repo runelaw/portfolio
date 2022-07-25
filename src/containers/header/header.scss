@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+#home {
+  position: relative;
+  background: url("../../assets/bgIMG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+
+  margin-top: 0;
+
+  .app__wrapper {
+    padding: 0;
+
+    .copyright {
+      display: none;
+    }
+  }
+}
+
+.app__header {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__header-container {
+  display: flex;
+  flex-direction: row;
+
+  h1 {
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+
+    @media screen and (max-width: 900px) {
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+
+.app__header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 52%;
+
+  span {
+    color: var(--secondary-color);
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 900px) {
+      font-size: 1rem;
+      margin: 0 1rem;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+}
+
+.app__tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  color: white !important;
+  margin-bottom: 3rem;
+}
+
+.app__wrap {
+  font-size: 40px;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 30px;
+  }
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+
+  font-weight: 500;
+  color: var(--white-color) !important;
+
+  outline: none;
+  margin: 2rem 0 0;
+  font-family: var(--font-base);
+  cursor: pointer;
+}
+
+.app__header-img {
+  img {
+    width: 100%;
+    height: auto;
+    animation: updown 3s linear infinite;
+  }
+  @keyframes updown {
+    0% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  @media screen and (max-width: 900px) {
+    align-items: center;
+    justify-content: center;
+    @keyframes updown {
+      0% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+  }
+}

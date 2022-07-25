@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Qwigley&display=swap");
+
+.app__contact {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+
+.app__contact-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-top: 3rem;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+
+.app__contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+  align-items: center;
+  div {
+    width: 100%;
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.95rem;
+      border: none;
+      border-radius: 7px;
+      background-color: var(--primary-color);
+      font-family: var(--font-base);
+      color: var(--secondary-color);
+      outline: none;
+    }
+    textarea {
+      height: 170px;
+    }
+    &:hover {
+      box-shadow: 0 0 25px #fef4f5;
+    }
+  }
+  button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+
+    font-weight: 500;
+    color: var(--white-color);
+
+    outline: none;
+    margin: 2rem 0 0;
+    font-family: var(--font-base);
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+.map-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(8, 253, 216, 0.1);
+  margin: 1rem 2rem;
+}
+.leaflet-container {
+  width: 40vw;
+  height: 50vh;
+  @media screen and (max-width: 768px) {
+    width: 80vw;
+    height: 60vh;
+  }
+}
+
+.contact-head {
+  font-family: "Qwigley", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--black-color);
+
+  span {
+    color: var(--secondary-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2.5rem;
+  }
+}
