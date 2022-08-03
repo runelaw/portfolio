@@ -119,6 +119,12 @@ const Contact = ({ swipe }) => {
           <h3 className="header-text">Thank You for getting in Touch</h3>
         </div>
       )}
+      <div className="copyright">
+        <p className="p-text">@2022 Prakhar</p>
+        <p className="p-text">All rights reserved.</p>
+        <p className="p-text">Just joking, copy away.</p>
+        <p className="p-text">I copy lotta stuff too.</p>
+      </div>
     </>
   );
 };
